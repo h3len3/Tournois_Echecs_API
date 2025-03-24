@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Labo.Domain.Entities
+namespace Labo.Application.DTO
 {
-    public class Tournament
+    public class RegisterTournamentDTO
     {
         public int Id { get; set; }
         public string Name { get; set; } 
@@ -26,7 +26,7 @@ namespace Labo.Domain.Entities
         [Range(0, 3000)]
         public int? MaxElo { get; set; }
 
-        public List<Category> Categories { get; set; } 
+        public Category[] Categories { get; set; }
 
         public TournamentStatus Status { get; set; }
 
@@ -41,3 +41,4 @@ namespace Labo.Domain.Entities
         public DateTime UpdatedAt { get; set; }
     }
 }
+

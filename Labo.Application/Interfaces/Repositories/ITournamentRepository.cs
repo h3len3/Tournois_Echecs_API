@@ -1,14 +1,9 @@
 ﻿using Be.Khunly.EFRepository.Abstraction;
 using Labo.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Labo.Application.Interfaces.Repositories
+namespace Labo.Infrastructure.Repositories
 {
-    public interface ITournanementRepository : IRepositoryBase<Member>
+    public interface ITournamentRepository : IRepositoryBase<Tournament>
     {
     }
 }

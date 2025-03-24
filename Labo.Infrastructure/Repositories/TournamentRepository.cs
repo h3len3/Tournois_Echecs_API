@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Labo.Infrastructure.Repositories
 {
-    public class TournamentRepository(LaboContext context) : RepositoryBase<Member>(context), IMemberRepository
+    public class TournamentRepository(LaboContext context) : RepositoryBase<Tournament>(context), ITournamentRepository
     {
     }
 

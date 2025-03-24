@@ -8,6 +8,8 @@ namespace Labo.Infrastructure
     {
         public DbSet<Member> Members { get; set; }
 
+        public DbSet<Tournament> Tournament { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new MemberConfig());
