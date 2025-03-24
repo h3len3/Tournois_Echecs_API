@@ -11,7 +11,7 @@ namespace Labo.Domain.Entities
     public class Tournament
     {
         public int Id { get; set; }
-        public string Name { get; set; } 
+        public string Name { get; set; } = null!;
         public string? Location { get; set; }
 
         [Range(2, 32)]
@@ -26,7 +26,7 @@ namespace Labo.Domain.Entities
         [Range(0, 3000)]
         public int? MaxElo { get; set; }
 
-        public List<Category> Categories { get; set; } 
+        public Category[] Categories { get; set; } 
 
         public TournamentStatus Status { get; set; }
 
